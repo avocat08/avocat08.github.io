@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <title>MedLink</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/search.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="primary-container">
+        <div class="navbar">
+            <img src="./assets/medlinknegro.png" alt="" height="70px" />
+            <div class="spacer"></div>
+            <div class="navbar-actions">
+                <button class="primary-button" id="new">
+                    <span>NUEVO</span> &nbsp;
+                    <i class="material-icons">add</i>
+                </button>
+                
+                <button class="primary-button--active primary-button primary-button--disabled" id="search">
+                    <span>BUSCAR</span> &nbsp;
+                    <i class="material-icons">search</i>
+                </button>
+                <script src="./scripts/router.js"></script>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        </br>
+        <div class="page-content">
+            <div class="searchbar-container">
+                <div class="searchbar" id="searchbar-container">
+                    <i class="material-icons">search</i>
+                    <div class="vertical-divider"></div>
+                    <input type="search" id="searchbar" class="searchbar-input">
+                </div>
+            </div>
+            </br>
+            
+
+            <div id="cardContainer" class="cardContainer">
+                
+                
+                
+
+            </div>
+            <script src="./scripts/loadData.js"></script>
+            <script></script>
+        </div>
+    </div>
+    <script src="./scripts/search.js"></script>
+</body>

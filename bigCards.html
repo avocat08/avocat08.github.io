@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8">
+    <title>MedLink</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="stylesheet" href="./styles/bigCards.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="primary-container">
+        <div class="navbar">
+            <img src="./assets/medlinknegro.png" alt="" height="70px" />
+            <div class="spacer"></div>
+            <div class="navbar-actions">
+                <button class="primary-button" id="new">
+                    <span>NUEVO</span> &nbsp;
+                    <i class="material-icons">add</i>
+                </button>
+                
+                <button class="primary-button--active primary-button primary-button--disabled" id="search">
+                    <span>BUSCAR</span> &nbsp;
+                    <i class="material-icons">search</i>
+                </button>
+                <script src="./scripts/router.js"></script>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        </br>
+        <div class="page-content" id="page-content">
+            <div class="back-button-container">
+                <button id="back" class="back-button" ><i class="material-icons">arrow_back_ios</i>Atrás</button>
+                
+            </div>
+            
+            
+            
+           
+        </div>
+        <script src="./scripts/bigCard.js"></script>
+        <script>document.getElementById('back').addEventListener('click', function() {
+            window.location.href = 'search.html';
+            console.log('Botón Atrás clicado');
+        });</script>
+        
+    </div>
+    
+</body>

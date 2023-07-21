@@ -1,0 +1,100 @@
+<head>
+    <meta charset="UTF-8">
+    <title>MedLink</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts/home.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="primary-container">
+        <div class="navbar">
+            <img src="./assets/medlinknegro.png" alt="" height="70px" />
+            <div class="spacer"></div>
+            <div class="navbar-actions">
+                <button disabled class="primary-button--active primary-button primary-button--disabled" id="new">
+                    <span>NUEVO</span> &nbsp;&nbsp;
+                    <i class="material-icons">add</i>
+
+                </button>
+                <button class="primary-button" id="search">
+                    <span>BUSCAR</span> &nbsp;&nbsp;
+                    <i class="material-icons">search</i>
+                </button>
+                <script src="./scripts/router.js"></script>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        </br>
+        <div class="page-content">
+            <form id="dataForm" class="form-container">
+                <div class="text-input">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="fullName">
+                </div>
+                <div class="text-input">
+                    <label for="birthdate">Fecha de nacimiento:</label>
+                    <input type="date" id="birthdate">
+                </div>
+                <div class="text-input">
+                    <label for="gender">Género:</label>
+                    <input type="text" id="gender">
+                </div>
+                <div class="text-input">
+                    <label for="bloodType">Tipo de sangre:</label>
+                    <input type="text" id="bloodType">
+                </div>
+                <div class="text-input">
+                    <label for="idNumber">Numero de identificación:</label>
+                    <input type="text" id="idNumber">
+                </div>
+                <div class="text-input">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="text-input">
+                    <label for="phoneNumber">Numero de teléfono:</label>
+                    <input type="text" id="phoneNumber">
+                </div>
+                <div class="text-input">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="text-input">
+                    <label for="alergies">Alergias:</label>
+                    <input type="text" id="alergies">
+                </div>
+                <div class="text-input">
+                    <label for="medications">Medicamentos actuales:</label>
+                    <input type="text" id="medications">
+                </div>
+
+                <div class="title"><h1>Información de contacto de emergencia</h1></div>
+
+                <div class="text-input">
+                    <label for="emName">Nombre completo:</label>
+                    <input type="text" id="emName">
+                </div>
+                
+                
+                
+                <div class="text-input">
+                    <label for="nombre">Relación con el paciente:</label>
+                    <input type="text" id="emRelation">
+                </div>
+                <div class="text-input">
+                    <label for="nombre">Número de telefono:</label>
+                    <input type="text" id="emPhone">
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="botonGuardar">Guardar</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+</body>
